@@ -1,19 +1,24 @@
 import React from "react"
 
 function Nav(props) {
-    if (props.nav == true) {
-        console.log("yes")
+    // if (props.nav == true) {
         return (
-            <div className="nav">
+            <nav className={`nav ${props.nav}`}>
+                <div classNAme="navTopBar"></div>
                 <ul>
-                    <li>login</li>
-                    <li>about</li>
+                    <li>Home</li>
+                    <hr />
+                    <li>Log In</li>
+                    <li>List your place</li>
+                    <li>Learn about hosting</li>
+                    <hr />
+                    <li>About</li>
                 </ul>
-            </div>
+            </nav>
         )
-    } else {
-        return null
-    }
+    // } else {
+    //     return null
+    // }
 }
 
 export default Nav

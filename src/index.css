@@ -12,6 +12,7 @@
     margin: 10px;
     cursor: pointer;
     z-index: 100;
+    color: white;
 }
 
 .logo:hover {
@@ -41,7 +42,7 @@
     color: rgb(44, 44, 44);
 }
 .searchBox h1 {
-    margin-bottom: 20px;
+    margin-bottom: 15px;
 }
 
 .searchBox label{
@@ -54,6 +55,7 @@
 
 .searchBox select {
     color: rgb(66, 66, 66);
+    background-color: white;
 }
 
 .hello {
@@ -62,12 +64,6 @@
 
 .date {
     width: 130px;
-}
-
-
-.searchPage img {
-    position: absolute;
-
 }
 
 .searchBox button{
@@ -90,8 +86,42 @@
 
 .nav {
     position: absolute;
-    background-color:lightblue;
+    background-color:rgb(235, 235, 235);
     height: 100vh;
     width: 100vw;
     z-index: 50;
+    transform: translateY(0);
+    transition: transform 500ms;
+}
+
+.hidden {
+    transform: translateY(-100%);
+    transition: transform 500ms;
+}
+
+.nav div {
+    background-color: rgb(37, 37, 37);
+    height: 70px;
+}
+
+.nav ul {
+    margin: 20px 0 0 15px;
+    padding: 0;
+}
+
+.nav li {
+    list-style: none;
+    font-size: 20px;
+    line-height: 50px;
+}
+
+.nav li:hover {
+    color: rgb(95, 95, 95);
+    text-decoration: underline;
+}
+
+hr {
+    border: 1px solid rgb(207, 207, 207);
+    width: 450px;
+    margin: 10px 0 10px 0;
 }

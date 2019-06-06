@@ -5,8 +5,11 @@ import Search from "./Components/Search"
 class App extends React.Component {
   render() {
     return (
-      <Search />
-
+      <div>
+        <Search />
+        {/* <Explore />
+        <Recommendation /> */}
+      </div>
     )
   }
 }
