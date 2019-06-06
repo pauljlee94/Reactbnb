@@ -6,7 +6,7 @@ class Form extends React.Component {
             <form>
                 <label>Where:</label>
                 <br/>
-                <input className="hello" type="text" placeholder="Anywhere "/>
+                <input className="destination" type="text" placeholder="Anywhere "/>
                 <br/>
                 <label>Check-In:</label>
                 <br/>

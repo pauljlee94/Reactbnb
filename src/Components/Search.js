@@ -38,7 +38,12 @@ class Search extends React.Component {
     render() {
         return (
             <div className="searchPage">
-                <img src={logo} alt="Reactbnb Logo" className="logo" onClick={this.handleClick} />
+                <img 
+                    src={logo} 
+                    alt="Reactbnb Logo" 
+                    className="logo" 
+                    onClick={this.handleClick} 
+                />
                 <Nav nav={this.state.nav} />
                 <div className="searchBox">
                     <h1>Book amazing places</h1>

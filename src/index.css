@@ -58,7 +58,7 @@
     background-color: white;
 }
 
-.hello {
+.destination {
     width: 300px;
 }
 
@@ -124,4 +124,42 @@ hr {
     border: 1px solid rgb(207, 207, 207);
     width: 450px;
     margin: 10px 0 10px 0;
+}
+
+.explorePage {
+    margin: 0 auto;
+    width: 870px;
+}
+
+.explorePage h2{
+    margin: 50px 0 0 20px;
+}
+
+.categoryContainer {
+    display: flex;
+}
+
+.exploreCategory {
+    margin: 0 10px 0 10px;
+    display: flex;
+    width: 270px;
+    height: 70px;
+    border: 1px solid rgb(179, 179, 179);
+    align-items: center;
+}
+
+.exploreCategory img {
+    height: 70px;
+}
+
+.exploreCategory p {
+    font-size: 15px;
+    font-weight: bold;
+    margin: auto;
+    cursor: pointer;
+}
+
+.exploreCategory p:hover {
+    color: rgb(95, 95, 95);
+    text-decoration: underline;
 }
