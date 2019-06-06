@@ -7,8 +7,15 @@
 }
 
 .logo{
+    position: absolute;
     width: 50px;
     margin: 10px;
+    cursor: pointer;
+    z-index: 100;
+}
+
+.logo:hover {
+    opacity: 0.85;
 }
 
 .searchPage{
@@ -23,14 +30,14 @@
     top: 30%;
     left: 10%;
     width: 350px;
-    height: 400px;
+    height: 430px;
     padding: 20px;
-    border-radius: 10px;
+    border-radius: 5px;
     box-shadow: 0 0 10px rgba(0,0,0,0.6);
     -moz-box-shadow: 0 0 10px rgba(0,0,0,0.6);
     -webkit-box-shadow: 0 0 10px rgba(0,0,0,0.6);
     -o-box-shadow: 0 0 10px rgba(0,0,0,0.6);
-    background-color: whitesmoke;
+    background-color: rgb(247, 247, 247);
     color: rgb(44, 44, 44);
 }
 .searchBox h1 {
@@ -78,5 +85,13 @@
 }
 
 .searchBox button:hover {
-    background-color: rgba(40, 128, 179, 0.75)
+    opacity: 0.75;
+}
+
+.nav {
+    position: absolute;
+    background-color:lightblue;
+    height: 100vh;
+    width: 100vw;
+    z-index: 50;
 }
