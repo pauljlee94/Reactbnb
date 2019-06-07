@@ -9,10 +9,6 @@ class Search extends React.Component {
     constructor() {
         super()
         this.state = {
-            // where: "" ,
-            // checkIn: "" ,
-            // checkOut: "" ,
-            // guests: "",
             nav: "hidden",
             imageUrl: "https://source.unsplash.com/featured/?vacation,city"
         }
@@ -36,11 +32,18 @@ class Search extends React.Component {
         }
     }
 
-    // componentDidMount() {
-    //     setInterval(()=> {
-
-    //     })
-    // }
+    componentDidMount() {
+        setInterval(() => {
+            fetch("https://source.unsplash.com/featured/?vacation,city")
+            .then((response) => {
+                this.setState(() => {
+                    return {
+                        imageUrl: response.url
+                    }
+                })
+            })
+        }, 3000)
+    }
 
     render() {
         return (
