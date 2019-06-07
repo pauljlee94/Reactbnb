@@ -13,7 +13,8 @@ class Search extends React.Component {
             // checkIn: "" ,
             // checkOut: "" ,
             // guests: "",
-            nav: "hidden"
+            nav: "hidden",
+            imageUrl: "https://source.unsplash.com/featured/?vacation,city"
         }
         this.handleClick = this.handleClick.bind(this)
     }
@@ -35,9 +36,15 @@ class Search extends React.Component {
         }
     }
 
+    // componentDidMount() {
+    //     setInterval(()=> {
+
+    //     })
+    // }
+
     render() {
         return (
-            <div className="searchPage">
+            <div className="searchPage" style={{backgroundImage: "url(" + this.state.imageUrl + ")"}}>
                 <img 
                     src={logo} 
                     alt="Reactbnb Logo" 

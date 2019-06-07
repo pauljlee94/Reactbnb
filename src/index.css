@@ -20,7 +20,7 @@
 }
 
 .searchPage{
-    background-image: url("https://source.unsplash.com/random");
+    /* background-image: url("https://source.unsplash.com/random"); */
     background-size: cover;
     background-position: center;
     height: 100vh;
