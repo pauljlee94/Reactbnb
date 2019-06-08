@@ -1,9 +1,21 @@
 import React from "react"
 
 class Form extends React.Component {
+    constructor() {
+        super()
+        this.state = {
+
+        }
+        this.onSubmit = this.onSubmit.bind(this)
+    }
+
+    onSubmit(e) {
+        e.preventDefault()
+    }
+
     render() {
         return(
-            <form>
+            <form onSubmit={this.onSubmit}>
                 <label>Where:</label>
                 <br/>
                 <input className="destination" type="text" placeholder="Anywhere "/>

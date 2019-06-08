@@ -4,6 +4,7 @@
     margin: 0;
     box-sizing: border-box;
     font-family: 'Nunito Sans', sans-serif;
+    scroll-behavior: smooth;
 }
 
 .logo{
@@ -20,13 +21,11 @@
 }
 
 .searchPage{
-    /* background-image: url("https://source.unsplash.com/random"); */
     background-size: cover;
     background-position: center;
     height: 100vh;
-    
     opacity: 1.0;
-    transition: background 2s ease-in-out;
+    transition: background 2s ease-in;
 }
 
 .searchBox {
@@ -88,14 +87,14 @@
 }
 
 .nav {
-    position: absolute;
+    position:absolute;
     background-color:rgb(235, 235, 235);
     height: 100vh;
     width: 100%;
     z-index: 50;
     transform: translateY(0);
     transition: transform 500ms;
-    overflow-x: hidden;
+    overflow: hidden;
 }
 
 .hidden {
@@ -114,14 +113,15 @@
     padding: 0;
 }
 
-.nav li {
-    list-style: none;
+.navlink {
+    text-decoration: none;
+    color: black;
     font-size: 20px;
     line-height: 50px;
     cursor: pointer;
 }
 
-.nav li:hover {
+.navlink:hover {
     color: rgb(95, 95, 95);
     text-decoration: underline;
 }
@@ -168,4 +168,55 @@ hr {
 .exploreCategory p:hover {
     color: rgb(95, 95, 95);
     text-decoration: underline;
+}
+
+.explorePage {
+    margin: 0 auto;
+    width: 900px;
+}
+
+.featuredPage h2{
+    margin: 50px 0 0 20px;
+}
+
+.featuredContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    justify-content: space-between;
+    justify-items: center;
+    width: 900px;
+    height: 880px;
+    margin: auto;
+}
+
+.featuredItem {
+    position: relative;
+    width: 280px;
+    height: 370px;
+    border: 1px solid rgb(168, 168, 168);
+    cursor: pointer;
+}
+
+.featuredItem:hover {
+    opacity: 0.8
+}
+
+.featuredItem img {
+    width: 280px;
+    height: 370px;
+}
+
+.featuredItem h3{
+    position: absolute;
+    top: 280px;
+    left: 38%;
+    color: white;
+}
+
+.featuredItem p{
+    color: white;
+    left: 30%;
+    top: 85%;
+    position: absolute;
 }

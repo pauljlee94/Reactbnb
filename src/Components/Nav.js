@@ -1,24 +1,23 @@
 import React from "react"
+import {NavLink} from "react-router-dom"
 
 function Nav(props) {
-    // if (props.nav == true) {
         return (
             <nav className={`nav ${props.nav}`}>
                 <div classNAme="navTopBar"></div>
                 <ul>
-                    <li>Home</li>
+                    <NavLink className="navlink" to="/">Home</NavLink>
                     <hr />
-                    <li>Log In</li>
-                    <li>List your place</li>
-                    <li>Learn about hosting</li>
+                    <NavLink className="navlink" to="/login">Log In</NavLink>
+                    <br/>
+                    <NavLink className="navlink" to="/list">List your place</NavLink>
+                    <br/>
+                    <NavLink className="navlink" to="/learn">Learn about hosting</NavLink>
                     <hr />
-                    <li>About</li>
+                    <NavLink className="navlink" to="/about">About</NavLink>
                 </ul>
             </nav>
         )
-    // } else {
-    //     return null
-    // }
 }
 
 export default Nav
