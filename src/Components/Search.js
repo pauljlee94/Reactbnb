@@ -10,7 +10,7 @@ class Search extends React.Component {
         super()
         this.state = {
             nav: "hidden",
-            imageUrl: "https://source.unsplash.com/featured/?vacation,city"
+            imageUrl: "url(https://source.unsplash.com/1920x1080/?vacation,city)"
         }
         this.handleClick = this.handleClick.bind(this)
     }
@@ -34,20 +34,20 @@ class Search extends React.Component {
 
     componentDidMount() {
         setInterval(() => {
-            fetch("https://source.unsplash.com/featured/?vacation,city")
+            fetch("https://source.unsplash.com/1920x1080/?vacation,city")
             .then((response) => {
                 this.setState(() => {
                     return {
-                        imageUrl: response.url
+                        imageUrl: "url(" + response.url + ")"
                     }
                 })
             })
-        }, 3000)
+        }, 6000)
     }
 
     render() {
         return (
-            <div className="searchPage" style={{backgroundImage: "url(" + this.state.imageUrl + ")"}}>
+            <div className="searchPage" style={{backgroundImage: this.state.imageUrl}}>
                 <img 
                     src={logo} 
                     alt="Reactbnb Logo" 
