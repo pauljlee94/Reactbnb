@@ -97,6 +97,13 @@
     overflow: hidden;
 }
 
+.navBar {
+    margin: auto;
+    height: 70px;
+    width: 100vw;
+    background-color: rgb(37, 37, 37);
+}
+
 .hidden {
     transform: translateY(-100%);
     transition: transform 500ms;
@@ -225,9 +232,16 @@ hr {
     position: absolute;
 }
 
-.navBar {
+footer {
     margin: auto;
-    height: 70px;
-    width: 100vw;
-    background-color: rgb(37, 37, 37);
+    text-align: center;
+    width: 100%;
+    height: 100px;
+    background-color: black;
+    padding-top: 30px;
+}
+
+footer .navlink{
+    color: white;
+    margin: 0 40px 0 10px;
 }

@@ -3,6 +3,7 @@ import React from 'react';
 import SearchPage from "./SearchPage"
 import Explore from "./Explore"
 import Featured from "./Featured"
+import Footer from "./Footer"
 
 class Main extends React.Component {
   render() {
@@ -11,6 +12,7 @@ class Main extends React.Component {
         <SearchPage />
         <Explore />
         <Featured />
+        <Footer />
       </div>
     )
   }
