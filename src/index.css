@@ -234,14 +234,87 @@ hr {
 
 footer {
     margin: auto;
-    text-align: center;
     width: 100%;
     height: 100px;
-    background-color: black;
+    background-color: rgb(37, 37, 37);
     padding-top: 30px;
+}
+
+footer ul {
+    display: flex;
+    padding: 0;
+    justify-content: space-evenly;
+
 }
 
 footer .navlink{
     color: white;
-    margin: 0 40px 0 10px;
+}
+
+.aboutBox {
+    margin: 13% auto 0 auto;
+    width: 800px;
+    height: 500px;
+    border: 1px solid grey;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.6);
+    -moz-box-shadow: 0 0 20px rgba(0,0,0,0.6);
+    -webkit-box-shadow: 0 0 20px rgba(0,0,0,0.6);
+    -o-box-shadow: 0 0 20px rgba(0,0,0,0.6);
+}
+
+.aboutBox h1 {
+    margin-bottom: 20px;
+}
+
+.loginForm {
+    margin: 200px auto 0 auto;
+    width: 400px;
+    height: 340px;
+    border: 1px solid grey;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.6);
+    -moz-box-shadow: 0 0 20px rgba(0,0,0,0.6);
+    -webkit-box-shadow: 0 0 20px rgba(0,0,0,0.6);
+    -o-box-shadow: 0 0 20px rgba(0,0,0,0.6);
+}
+
+.loginForm h1 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.loginForm label {
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.loginForm input{
+    width: 340px;
+    margin: 10px 0 30px 0;
+}
+
+.loginForm button {
+    margin: 0 120px 0 120px;
+    width: 100px;
+    height: 40px;
+    border-radius: 5px;
+    border: none;
+    background-color: rgb(40, 128, 179);
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    bottom: 30px;
+    right: 30px;
+}
+
+.loginForm button:hover {
+    opacity: 0.75;
+}
+
+.bottom {
+    position: absolute;
+    bottom: 0;
 }
