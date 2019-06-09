@@ -1,6 +1,5 @@
 import React from "react"
 import "../index.css"
-import logo from "../img/logo.png"
 
 import Form from "./Form"
 import Nav from "./Nav"
@@ -47,13 +46,7 @@ class SearchPage extends React.Component {
     render() {
         return (
             <div className="searchPage" style={{backgroundImage: this.state.imageUrl}}>
-                <img 
-                    src={logo} 
-                    alt="Reactbnb Logo" 
-                    className="logo" 
-                    onClick={this.handleClick} 
-                />
-                <Nav nav={this.state.nav} />
+                <Nav />
                 <div className="searchBox">
                     <h1>Book amazing places</h1>
                     <Form />

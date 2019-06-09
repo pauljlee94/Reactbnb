@@ -1,8 +1,14 @@
 import React from "react"
+import Nav from "./Nav"
+import NavBar from "./NavBar"
 
 function About() {
     return(
-        <h1>aAbout</h1>
+        <div className="aboutPage">
+            <Nav />
+            <NavBar />
+            <h1>About</h1>
+        </div>
     )
 }
 

@@ -175,6 +175,11 @@ hr {
     width: 900px;
 }
 
+.featuredPage {
+    margin: 0 auto;
+    width: 900px;
+}
+
 .featuredPage h2{
     margin: 50px 0 0 20px;
 }
@@ -218,4 +223,11 @@ hr {
     left: 30%;
     top: 85%;
     position: absolute;
+}
+
+.navBar {
+    margin: auto;
+    height: 70px;
+    width: 100vw;
+    background-color: rgb(37, 37, 37);
 }
