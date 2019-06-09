@@ -9,6 +9,7 @@ function List() {
             <Nav />
             <NavBar />
             <h1>List your place</h1>
+            <Footer position="bottom" />
         </div>
     )
 }

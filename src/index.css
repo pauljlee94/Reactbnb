@@ -251,8 +251,8 @@ footer .navlink{
     color: white;
 }
 
-.aboutBox {
-    margin: 13% auto 0 auto;
+.textBox {
+    margin: 120px auto 0 auto;
     width: 800px;
     height: 500px;
     border: 1px solid grey;
@@ -264,8 +264,12 @@ footer .navlink{
     -o-box-shadow: 0 0 20px rgba(0,0,0,0.6);
 }
 
-.aboutBox h1 {
+.textBox h1 {
     margin-bottom: 20px;
+}
+
+.textBox hr{
+    width: 100%;
 }
 
 .loginForm {

@@ -8,7 +8,7 @@ function About() {
         <div className="aboutPage">
             <Nav />
             <NavBar />
-            <div className="aboutBox">
+            <div className="textBox">
                 <h1>About</h1>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Viverra mauris in aliquam sem fringilla ut morbi tincidunt augue. Est sit amet facilisis magna etiam tempor orci. Nec feugiat nisl pretium fusce id. Fermentum leo vel orci porta non pulvinar neque laoreet suspendisse. Egestas quis ipsum suspendisse ultrices gravida dictum fusce. Eget mauris pharetra et ultrices neque ornare aenean euismod elementum. Porta nibh venenatis cras sed. Vitae congue mauris rhoncus aenean vel elit scelerisque mauris pellentesque. Eleifend quam adipiscing vitae proin sagittis nisl rhoncus mattis rhoncus. Amet purus gravida quis blandit turpis. Sed odio morbi quis commodo odio.</p>
                 <br/>
