@@ -8,7 +8,9 @@ function ResultPage(props) {
         <div className="loginPage">
             <Nav />
             <NavBar />
-            <h1>Looking for places in {props.destination} from {props.checkin} to {props.checkout} for {props.guests} guests.</h1>
+            <h1>Looking for places in {props.destination}</h1>
+            <span>From {props.checkin} to {props.checkout}</span>
+            <span>For {props.guests} {props.guests > 1 ? "guests" : "guest"}</span>
             <Footer position="bottom" />
         </div>
     )
