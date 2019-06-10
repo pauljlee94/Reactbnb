@@ -46,8 +46,8 @@ class Nav extends React.Component {
                     className="logo" 
                     onClick={this.handleClick} 
                 />
-                <nav className={"nav" + " " + this.state.nav}>
-                    <div classNAme="navTopBar"></div>
+                <nav className={"nav " + this.state.nav}>
+                    <div className="navTopBar"></div>
                     <ul>
                         <NavLink className="navlink" to="/" onClick={this.closeNav}>Home</NavLink>
                         <hr />

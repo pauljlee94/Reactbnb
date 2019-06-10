@@ -5,7 +5,7 @@ import Explore from "./Explore"
 import Featured from "./Featured"
 import Footer from "./Footer"
 
-class Main extends React.Component {
+class Home extends React.Component {
   render() {
     return (
       <div>
@@ -18,4 +18,4 @@ class Main extends React.Component {
   }
 }
 
-export default Main;
+export default Home;
