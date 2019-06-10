@@ -1,7 +1,7 @@
 import React from "react"
 import "../index.css"
 
-import Form from "./Form"
+// import Form from "./Form"
 import Nav from "./Nav"
 
 class SearchPage extends React.Component {
@@ -49,7 +49,33 @@ class SearchPage extends React.Component {
                 <Nav />
                 <div className="searchBox">
                     <h1>Book amazing places</h1>
-                    <Form />
+                    <form onSubmit={this.props.onSubmit}>
+                        <label>Where:</label>
+                        <br/>
+                        <input className="destination" type="text" placeholder="Anywhere" name="destination" value={this.props.destination} onChange={this.props.handleChange}/>
+                        <br/>
+                        <label>Check-In:</label>
+                        <br/>
+                        <input className="date" type="date" name="checkin" value={this.props.checkin} onChange={this.props.handleChange}/>
+                        <br/>
+                        <label>Check-Out:</label>
+                        <br/>
+                        <input className="date" type="date" name="checkout" value={this.props.checkout} onChange={this.props.handleChange}/>
+                        <br/>
+                        <label>Guests</label>
+                        <br/>
+                        <select name="guests" value={this.props.guests} onChange={this.props.handleChange}>
+                            <option value="">0</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="5+">5+</option>
+                        </select>
+                        <br/>
+                        <button>search</button>
+                    </form>
                 </div>
             </div>
         )
