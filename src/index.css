@@ -68,8 +68,11 @@
     width: 130px;
 }
 
-.searchBox button{
+.searchButton{
     position: absolute;
+    text-align: center;
+    line-height: 40px;
+    text-decoration: none;
     width: 100px;
     height: 40px;
     border-radius: 5px;
@@ -82,7 +85,7 @@
     right: 30px;
 }
 
-.searchBox button:hover {
+.searchButton:hover {
     opacity: 0.75;
 }
 
